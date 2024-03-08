@@ -2,59 +2,19 @@
 import { Image } from 'astro:assets';
 import foto from '../images/ga.webp';
 import Layout from '../layouts/Layout.astro';
+import WinMacos from '../components/WinMacos.astro';
 ---
 
 <Layout title="Herobal">
-	<main class="p-4 max-w-screen-lg mx-auto text-gray-300 text-lg leading-relaxed flex justify-center ">
-		<div class="flex flex-col shadow-slate-950 rounded-sm py-5 shadow-md  bg-slate-900">
-			<div class="flex flex-row ml-3 mb-3 mt-0 space-x-1">
-				<svg 
-					class="text-red-700 hover:text-red-500"
-					width="20" 
-					height="20" 
-					viewBox="0 0 24 24" 
-					stroke-width="1.5" 
-					stroke="currentColor" 
-					fill="none" 
-					stroke-linecap="round" 
-					stroke-linejoin="round">
-					<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-					<path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" stroke-width="0" fill="currentColor" />
-				</svg>
-				<svg 
-					class="text-yellow-400 hover:text-yellow-300"
-					width="20" 
-					height="20" 
-					viewBox="0 0 24 24" 
-					stroke-width="1.5" 
-					stroke="currentColor" 
-					fill="none" 
-					stroke-linecap="round" 
-					stroke-linejoin="round">
-					<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-					<path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" stroke-width="0" fill="currentColor" />
-				</svg>
-				<svg 
-					class="text-green-600 hover:text-green-400"
-					width="20" 
-					height="20" 
-					viewBox="0 0 24 24" 
-					stroke-width="1.5" 
-					stroke="currentColor" 
-					fill="none" 
-					stroke-linecap="round" 
-					stroke-linejoin="round">
-					<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-					<path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" stroke-width="0" fill="currentColor" />
-				</svg>
-			</div>
-			<div class="flex flex-col justify-center lg:flex-row lg:space-x-5">
-				<p class="pb-3 sm:w-1/2 px-3.5 text-sky-200">
+	<main class="p-4 max-w-screen-xl mx-auto text-gray-300 text-lg leading-relaxed flex justify-center flex-col space-y-3">
+		<WinMacos class="flex flex-col" >
+			<div class="flex flex-col justify-center md:flex-row sm:flex-row lg:space-x-5">
+				<p class="text-justify py-3 sm:w-1/2 px-4 text-sky-200">
 					¡Hola! Soy Anibal Olazabal 🐱‍👤, un entusiasta de la tecnología con habilidades en redes 📶, sistemas operativos 💻 y programación 👾. Me especializo en diseñar soluciones de red eficientes y seguras, aprovechando mi conocimiento profundo de servidores y protocolos de red. Además, tengo experiencia en el desarrollo de software, creando aplicaciones que optimizan el rendimiento y la experiencia del usuario. ¡Bienvenido a mi mundo tecnológico, donde la innovación y la eficiencia se encuentran!
 				</p>
-				<div class=" mb-auto flex items-center flex-col lg:mt-6 md:flex-row sm:flex-col">
-					<Image class=" w-3/4 h-3/4 sm:w-1/2 sm:h-1/2 md:w-60 md:h-60" src={foto} alt="Mi fotico"/>
-					<div class="flex object-cover flex-row justify-center md:flex-col sm:flex-col rounded-2xl px-1 bg-indigo-950 lg:space-y-3 lg:ml-5 my-auto py-3 ml-2 shadow-md shadow-slate-950">
+				<div class="flex items-center flex-col md:flex-row sm:flex-col">
+					<Image class=" w-3/4 h-3/4 sm:w-1/2 sm:h-1/2 md:w-60 md:h-60 mb-2" src={foto} alt="Mi fotico"/>
+					<div class="flex object-cover flex-row justify-center md:flex-col sm:flex-col md:my-5 rounded-2xl px-1 bg-indigo-950 lg:space-y-3  lg:ml-5 my-auto py-3 ml-2 shadow-md shadow-slate-950">
 						<a href="https://www.linkedin.com/in/anibalor" target="_blank">
 						<svg class=" hover:text-blue-600"
 							width="40" 
@@ -107,6 +67,13 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 			</div>
+		</WinMacos>
+		<div class="flex flex-col space-x-0 sm:flex-row sm:space-x-3 space-y-3 sm:space-y-0 " >
+			<WinMacos>
+
+			</WinMacos>
+			<WinMacos>
+
+			</WinMacos>
 		</div>
-	</main>
 </Layout>
